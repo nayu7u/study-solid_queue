@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get "trigger/index"
+  post "trigger/create"
   # enable mission_control-jobs
   mount MissionControl::Jobs::Engine, at: "/jobs"
 
