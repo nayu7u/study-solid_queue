@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get "home/index"
   get "trigger/index"
   post "trigger/create"
   # enable mission_control-jobs
@@ -16,5 +17,5 @@ Rails.application.routes.draw do
   get "manifest" => "rails/pwa#manifest", as: :pwa_manifest
 
   # Defines the root path route ("/")
-  # root "posts#index"
+  root "home#index"
 end
