@@ -135,6 +135,12 @@ GEM
     matrix (0.4.2)
     mini_mime (1.1.5)
     minitest (5.25.1)
+    mission_control-jobs (0.3.1)
+      importmap-rails
+      irb (~> 1.13)
+      rails (>= 7.1)
+      stimulus-rails
+      turbo-rails
     msgpack (1.7.2)
     net-imap (0.4.14)
       date
@@ -327,6 +333,7 @@ DEPENDENCIES
   debug
   importmap-rails
   jbuilder
+  mission_control-jobs
   puma (>= 5.0)
   rails (~> 7.2.1)
   rubocop-rails-omakase

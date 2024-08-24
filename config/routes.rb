@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  # enable mission_control-jobs
+  mount MissionControl::Jobs::Engine, at: "/jobs"
+
   resources :data
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
