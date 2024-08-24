@@ -1,7 +1,9 @@
-<div id="<%= dom_id datum %>">
-  <p class="my-5">
+<div id="<%= dom_id datum %>" class="border m-2 p-2 flex justify-between">
+  <div>
     <strong class="block font-medium mb-1">Text:</strong>
     <%= datum.text %>
-  </p>
-
+  </div>
+  <div>
+    <%= link_to "Show this datum", datum, class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+  </div>
 </div>
