@@ -2,6 +2,6 @@ class AddDataJob < ApplicationJob
   queue_as :default
 
   def perform(*args)
-    # Do something later
+    Datum.create!(text: "add by Active Job")
   end
 end
